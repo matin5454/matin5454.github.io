@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+
+}
+a, a:visited, a:hover, a:active{
+  color: inherit;
+}
+
+body{
+    background-color: black;
+    width: 100%;
+    height: 50%;
+}
+/* HEADER !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* HEADER !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* HEADER !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+#netflixnav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10vh;           
+  background: black;
+  z-index: 1000;
+}
+.netflix {
+ width: min(120px , 40vw);
+ aspect-ratio: 3 / 1;
+}
+menu{
+    display: none;
+}
+.netflix img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    
+}
+.userlogo{
+    width:min(40px, 40vw);
+    display: none;
+    
+}
+.userlogo img{
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+    overflow: hidden;
+    border-radius:12px;
+}
+nav{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(0, 0, 0);
+}
+.menumobile{
+    position: sticky;
+    overflow: hidden;
+}
+
+.menumobile ul{
+    color: white;
+    cursor: pointer;
+    gap: 20px;
+}
+#mobilemenu{
+    overflow: hidden;
+    order: -1;
+}
+menu ul li:hover{
+    color: red;
+}
+.searchbar{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.nicons i:hover{
+    color: red;
+}
+
+.nicons p:hover{
+    color: red;
+}
+.nicons p{
+    display: none;
+}
+.zingrov{
+    display: none !important;
+}
+.menumobile button{
+    font-size: 20px;
+    border: none;
+}
+.fa-bars{
+    background-color: transparent;
+    color: white;
+}
+iframe{
+    display: flex;
+    width: 90%;
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+    margin: 0 auto;
+}
+ .video{
+    margin: 20px auto;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+@media only screen and (min-width: 768px) {
+   
+    
+    /* HEADER !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+    /* HEADER !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+    /* HEADER !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+    .netflix {
+    width: min(180px , 40vw);
+    aspect-ratio: 3 / 1;
+    order: -1;
+}
+    .menumobile{
+        display: none; 
+    }
+    menu{display: flex;}
+    menu ul{
+    display: flex;
+    gap: 20px;
+    color: white;
+    cursor: pointer;
+    }   
+    menu ul li{
+        transition: .3s ease;
+    }
+    menu ul li:hover{
+        transform: scale(1.1);
+    }
+    .searchbar{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.nicons i{
+    transition: .3s ease;
+}
+.nicons i:hover{
+    color: red;
+    transform: scale(1.1);
+}
+
+.nicons p:hover{
+    color: red;
+    transform: scale(1.1);
+}
+.nicons{
+    display: flex;
+    align-items:center;
+    gap: 15px;
+    margin: 0 20px;
+}  
+.nicons p{
+    display: flex;
+    transition: .3s ease;
+    cursor: pointer;
+} 
+.userlogo{
+    display: flex;
+    transition: .3s ease;
+    
+}
+.userlogo:hover{
+    transform: scale(1.1);
+    
+    
+}
+
+.zingrov{
+    display: block !important;
+    transition: .3s ease;
+}
+iframe{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+    margin: 0 auto;
+}
+ .video{
+    margin: 20px 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+}
