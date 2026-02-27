@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="az" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mətin Fətizadə | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body>
+
+    
+    <nav id="navbar">
+        <a href="https://fatizada.me" class="nav-logo">
+            <span class="logo-m">M</span><span class="logo-f">F</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#hero">Ana səhifə</a></li>
+            <li><a href="#about">Haqqımda</a></li>
+            <li><a href="#skills">Bacarıqlar</a></li>
+            <li><a href="#projects">Layihələr</a></li>
+            <li><a href="#contact">Əlaqə</a></li>
+        </ul>
+        <div class="nav-right">
+            <button class="theme-toggle" id="themeToggle" title="Tema dəyiş">
+                <i class="fas fa-moon" id="themeIcon"></i>
+            </button>
+            <button class="nav-toggle" id="navToggle" aria-label="Menyu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="blob blob1"></div>
+            <div class="blob blob2"></div>
+            <div class="blob blob3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Available for work
+            </div>
+            <h1 class="hero-name">
+                Mətin<br><span class="gradient-text">Fətizadə</span>
+            </h1>
+            <p class="hero-title">
+                <span id="typewriter"></span><span class="cursor-blink">|</span>
+            </p>
+            <p class="hero-desc">
+                Full-Stack development sahəsini sevən, hər gün yeni şeylər öyrənməyə
+                həvəsli bir gənc inkişafçı. Div Academy-də Full-Stack öyrənirəm.
+            </p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn btn-primary">
+                    Layihələrə bax <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="https://www.instagram.com/maatieev/" target="_blank" class="btn btn-instagram">
+                    <i class="fab fa-instagram"></i> maatieev
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-num">1</span>
+                    <span class="stat-label">İl təcrübə</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num">8+</span>
+                    <span class="stat-label">Layihə</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num">3</span>
+                    <span class="stat-label">Dil bilir</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="img-wrapper">
+                <img src="photo.JPEG" alt="Mətin Fətizadə" class="hero-img">
+                <div class="img-ring ring1"></div>
+                <div class="img-ring ring2"></div>
+            </div>
+            <div class="floating-card card1">
+                <i class="fab fa-js"></i> JavaScript
+            </div>
+            <div class="floating-card card2">
+                <i class="fab fa-css3-alt"></i> CSS3
+            </div>
+            <div class="floating-card card3">
+                <i class="fab fa-html5"></i> HTML5
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Kiməm?</span>
+                <h2 class="section-title">Haqqımda</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        Mən <strong>Mətin Fətizadə</strong> — Full-Stack development sahəsini
+                        sevən, hər gün yeni şeylər öyrənməyə həvəsli bir gənc inkişafçıyam.
+                        HTML, CSS və JavaScript ilə istifadəçi dostu veb səhifələr yaratmaqdan
+                        zövq alıram.
+                    </p>
+                    <p>
+                        Hazırda <strong>Div Academy</strong>-də Full-Stack Development üzrə
+                        təhsilimi davam etdirirəm. Analitik düşüncə və problem həlli
+                        bacarıqlarımı proqramlaşdırma ilə birləşdirərək inkişaf etməyi
+                        hədəfləyirəm.
+                    </p>
+                    <div class="about-tags">
+                        <span><i class="fas fa-map-marker-alt"></i> Bakı, Azərbaycan</span>
+                        <span><i class="fas fa-graduation-cap"></i> Div Academy</span>
+                        <span><i class="fas fa-code"></i> Full-Stack Student</span>
+                    </div>
+                </div>
+                <div class="about-cards">
+                    <div class="edu-card">
+                        <div class="edu-icon"><i class="fas fa-laptop-code"></i></div>
+                        <div class="edu-info">
+                            <h4>Div Academy</h4>
+                            <p>Full-Stack Development</p>
+                            <span>2025 — 2026</span>
+                        </div>
+                    </div>
+                    <div class="edu-card">
+                        <div class="edu-icon"><i class="fas fa-university"></i></div>
+                        <div class="edu-info">
+                            <h4>ADU</h4>
+                            <p>Beynəlxalq münasibətlər</p>
+                            <span>2021 — 2025</span>
+                        </div>
+                    </div>
+                    <div class="edu-card">
+                        <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="edu-info">
+                            <h4>BDU</h4>
+                            <p>Beynəlxalq turizm </p>
+                            <span>2025 — 2027</span>
+                        </div>
+                    </div>
+                    <div class="edu-card">
+                        <div class="edu-icon"><i class="fas fa-language"></i></div>
+                        <div class="edu-info">
+                            <h4>Dil Bilikləri</h4>
+                            <p>Azərbaycan • Rus • İngilis</p>
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Nə bacarıram?</span>
+                <h2 class="section-title">Bacarıqlar</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="skill-icon html"><i class="fab fa-html5"></i></div>
+                    <span>HTML5</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon css"><i class="fab fa-css3-alt"></i></div>
+                    <span>CSS3</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon js"><i class="fab fa-js"></i></div>
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon git"><i class="fab fa-git-alt"></i></div>
+                    <span>Git & GitHub</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon resp"><i class="fas fa-mobile-alt"></i></div>
+                    <span>Responsive</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon ai"><i class="fas fa-robot"></i></div>
+                    <span>AI Tools</span>
+                </div>
+            </div>
+            <div class="soft-skills">
+                <h3>Şəxsi Bacarıqlar</h3>
+                <div class="soft-grid">
+                    <div class="soft-item"><i class="fas fa-brain"></i> Analitik düşüncə</div>
+                    <div class="soft-item"><i class="fas fa-puzzle-piece"></i> Problem həlli</div>
+                    <div class="soft-item"><i class="fas fa-users"></i> Komanda işi</div>
+                    <div class="soft-item"><i class="fas fa-bolt"></i> Adaptasiya</div>
+                    <div class="soft-item"><i class="fas fa-clock"></i> Vaxt idarəsi</div>
+                    <div class="soft-item"><i class="fas fa-bullseye"></i> Dəqiqlik</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Nə etmişəm?</span>
+                <h2 class="section-title">Layihələr</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-emoji">🏦</span>
+                        <div class="project-links">
+                            <a href="https://matin5454.github.io/Bank-Calculator" target="_blank" title="Sayta bax">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://github.com/matin5454/Bank-Calculator" target="_blank" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3> Bank Hesablayıcı</h3>
+                    <p>Kredit, Depozit, Avtokredit və İpoteka hesablayan müasir bank kalkulyatoru. Dark/Light mod dəstəyi ilə.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+                <div class="project-card coming-soon">
+                    <div class="project-header">
+                        <span class="project-emoji">🚀</span>
+                    </div>
+                    <h3>Tezliklə...</h3>
+                    <p>Yeni layihə üzərində işləyirəm. Tez bir zamanda buraya əlavə olunacaq!</p>
+                    <div class="project-tags">
+                        <span>Coming Soon</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Yazın mənə!</span>
+                <h2 class="section-title">Əlaqə</h2>
+            </div>
+            <div class="contact-grid">
+                <a href="https://www.instagram.com/maatieev/" target="_blank" class="contact-card insta">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                    <p>maatieev</p>
+                </a>
+                <a href="https://github.com/matin5454" target="_blank" class="contact-card github">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                    <p>matin5454</p>
+                </a>
+                <a href="mailto:fetizademetin@gmail.com" class="contact-card email">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
+                    <p>fetizademetin@gmail.com</p>
+                </a>
+                <a href="https://www.linkedin.com/in/matin-fatiev54" target="_blank" class="contact-card linkedin">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                    <p>matin-fatiev54</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer>
+        <div class="footer-content">
+            <a href="https://fatizada.me" class="footer-logo">
+                <span class="logo-m">M</span><span class="logo-f">F</span>
+            </a>
+            <p>© 2026 Mətin Fətizadə — Bütün hüquqlar qorunur</p>
+            <div class="footer-socials">
+                <a href="https://www.instagram.com/maatieev/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/matin5454" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/matin-fatiev54" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
