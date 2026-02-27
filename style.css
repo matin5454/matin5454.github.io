@@ -42,7 +42,10 @@
     --float-border: rgba(0,0,0,0.12);
 }
 
-html { scroll-behavior: smooth; }
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
 
 body {
     font-family: 'Inter', sans-serif;
@@ -506,12 +509,12 @@ footer p { color:var(--text2); font-size:13px; }
 
 @media (max-width:768px) {
     .nav-toggle { display:flex; }
-
-    
     .nav-links {
         position:fixed;
         top:0; right:0;
-        width:75%; height:100vh;
+        width:75%; 
+        max-width: 300px;
+        height:100vh;
         background:var(--nav-bg);
         backdrop-filter:blur(24px);
         flex-direction:column;
@@ -541,8 +544,25 @@ footer p { color:var(--text2); font-size:13px; }
     .footer-content { flex-direction:column; text-align:center; }
 }
 
-@media (max-width:480px) {
-    .skills-grid { grid-template-columns:repeat(2,1fr); }
-    .contact-grid { grid-template-columns:repeat(2,1fr); }
+@media (max-width: 480px) {
+    .skills-grid { grid-template-columns: repeat(2,1fr); }
+    .contact-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        padding: 0 4px;
+    }
+
+    .contact-card {
+        padding: 20px 10px;
+        min-width: 0; 
+        word-break: break-word;
+    }
+
+    .contact-card p {
+        font-size: 11px;
+        word-break: break-all;
+    }
+
     .hero-name { letter-spacing:-1px; }
+    .container { padding: 0 4%; }
 }
