@@ -493,8 +493,20 @@ footer { padding:40px 6%; border-top:1px solid var(--border2); background:var(--
 }
 .footer-logo { text-decoration:none; font-size:20px; font-weight:800; }
 footer p { color:var(--text2); font-size:13px; }
-.footer-socials { display:flex; gap:14px; }
-.footer-socials a { color:var(--text2); font-size:18px; text-decoration:none; transition:color 0.3s; }
+.footer-socials { display:flex; gap:14px; align-items:center; }
+.footer-socials a { 
+    color:var(--text2); 
+    font-size:18px; 
+    text-decoration:none; 
+    transition:color 0.3s;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:36px;
+    height:36px;
+    overflow:hidden;        
+    border-radius:8px;      
+}
 .footer-socials a:hover { color:var(--accent2); }
 
 
@@ -540,29 +552,33 @@ footer p { color:var(--text2); font-size:13px; }
 
     .about-grid { grid-template-columns:1fr; gap:40px; }
     .skills-grid { grid-template-columns:repeat(3,1fr); }
-    .contact-grid { grid-template-columns:repeat(2,1fr); }
+    .contact-grid { grid-template-columns: repeat(2, 1fr);gap: 14px;}
     .footer-content { flex-direction:column; text-align:center; }
 }
 
 @media (max-width: 480px) {
-    .skills-grid { grid-template-columns: repeat(2,1fr); }
+    .hero-name { letter-spacing:-1px; }
+
+    .container { padding: 0 16px; }
+
+    .skills-grid { grid-template-columns: repeat(2,1fr); gap:12px; }
     .contact-grid {
         grid-template-columns: 1fr 1fr;
         gap: 12px;
-        padding: 0 4px;
+    }
+    .contact-card {
+        padding: 24px 12px;
+        min-width: 0;
     }
 
-    .contact-card {
-        padding: 20px 10px;
-        min-width: 0; 
-        word-break: break-word;
-    }
+    .contact-card i { font-size: 24px; }
+    .contact-card span { font-size: 14px; }
 
     .contact-card p {
         font-size: 11px;
-        word-break: break-all;
+        word-break: break-word;
+        overflow-wrap: break-word;
+        text-align: center;
+        width: 100%;
     }
-
-    .hero-name { letter-spacing:-1px; }
-    .container { padding: 0 4%; }
 }
